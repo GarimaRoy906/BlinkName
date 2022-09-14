@@ -1,45 +1,71 @@
-//Garima Roy
+/*
+  Blink 
+  Garima Roy
+  2110994840
+*/
 
 // the setup function runs once when you press reset or power the board
-void setup() 
+void setup()
 {
   // initialize digital pin LED_BUILTIN as an output.
-  pinMode(13, OUTPUT);
+  pinMode(LED_BUILTIN, OUTPUT);
 }
 
+void Dot() 
+ {
+    digitalWrite(LED_BUILTIN, LOW);   // turn the LED on (HIGH is the voltage level)
+    delay(5000);                       // wait for a second
+    digitalWrite(LED_BUILTIN, HIGH);    // turn the LED off by making the voltage LOW
+    delay(3000);                       // wait for a second
+}
+
+void Dash()
+{
+    digitalWrite(LED_BUILTIN, LOW);   // turn the LED on (HIGH is the voltage level)
+    delay(5000);                       // wait for a five second
+    digitalWrite(LED_BUILTIN, HIGH);    // turn the LED off by making the voltage LOW
+    delay(3000);                       // wait for a three second
+}
+
+void loop() 
+{
 // the loop function runs over and over again forever
-void Dot()                     // There is a one-second delay when the dot function is used for both glowing and fading.
-{
-  digitalWrite(13, HIGH);      // LED Glows
-  delay(1000);                 // wait for a one second  
-  digitalWrite(13, LOW);       // LED Fades
-  delay(1000);                 //wait for a one second     
-}
 
-
-void Dash()                     //There is a three-second delay when the dash function is used for both glowing and fading
-{
-  digitalWrite(13, HIGH);      // LED Glows
-  delay(3000);                 // wait for a three second
-  digitalWrite(13, LOW);       // LED Fades
-  delay(3000);                 // wait for a three second
-}
-
-void loop()
-{       //This is the morse code for my name "Garima"
+//G                                            //Displaying Letter G
   Dash();
   Dash();
   Dot();
+  digitalWrite(LED_BUILTIN, LOW);
+  delay(2000);                                 //We will leave it for 2 sec
+  
+//A                                             //Displaying Letter A
   Dot();
   Dash();
-  Dash();
+  digitalWrite(LED_BUILTIN, LOW);
+  delay(2000);                                  //We will leave it for 2 sec
+  
+//R                                             //Displaying Letter R
   Dot();
   Dash();
   Dot();
+  digitalWrite(LED_BUILTIN, LOW);               
+  delay(2000);                                  //We will leave it for 2 sec
+  
+//I                                             //Displaying Letter I
   Dot();
   Dot();
+  digitalWrite(LED_BUILTIN, LOW);
+  delay(2000);
+  
+//M                                             //Displaying Letter M
   Dash();
-  Dash();
+  Dash(); 
+  digitalWrite(LED_BUILTIN, LOW);
+  delay(2000);                                  //We will leave it for 2 sec
+  
+//A                                             //Displaying Letter A
   Dot();
-  Dash();     
-}  
+  Dash(); 
+  digitalWrite(LED_BUILTIN, LOW);
+  delay(2000);                                  //We will leave it for 2 sec
+}   
