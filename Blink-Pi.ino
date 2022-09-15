@@ -36,36 +36,36 @@ void loop()
   Dash();
   Dot();
   digitalWrite(LED_BUILTIN, LOW);
-  delay(1000);                                 //We will leave it for 2 sec
+  delay(1000);                                 //We will leave it for 1 sec
   
 //A                                             //Displaying Letter A
   Dot();
   Dash();
   digitalWrite(LED_BUILTIN, LOW);
-  delay(1000);                                  //We will leave it for 2 sec
+  delay(1000);                                  //We will leave it for 1 sec
   
 //R                                             //Displaying Letter R
   Dot();
   Dash();
   Dot();
   digitalWrite(LED_BUILTIN, LOW);               
-  delay(1000);                                  //We will leave it for 2 sec
+  delay(1000);                                  //We will leave it for 1 sec
   
 //I                                             //Displaying Letter I
   Dot();
   Dot();
   digitalWrite(LED_BUILTIN, LOW);
-  delay(1000);
+  delay(1000);                                  //We will leave it for 1 sec
   
 //M                                             //Displaying Letter M
   Dash();
   Dash(); 
   digitalWrite(LED_BUILTIN, LOW);
-  delay(1000);                                  //We will leave it for 2 sec
+  delay(1000);                                  //We will leave it for 1 sec
   
 //A                                             //Displaying Letter A
   Dot();
   Dash(); 
   digitalWrite(LED_BUILTIN, LOW);
-  delay(1000);                                  //We will leave it for 2 sec
+  delay(1000);                                  //We will leave it for 1 sec
 }   
