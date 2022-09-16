@@ -13,18 +13,18 @@ void setup()
 
 void Dot() 
  {
-    digitalWrite(LED_BUILTIN, LOW);     //  turn the LED off by making the voltage LOW
-    delay(1000);                        // wait for a second
     digitalWrite(LED_BUILTIN, HIGH);    //  turn the LED on (HIGH is the voltage level)
     delay(1000);                       // wait for a second
+    digitalWrite(LED_BUILTIN, LOW);     //  turn the LED off by making the voltage LOW
+    delay(1000);                        // wait for a second
 }
 
 void Dash()
 {
-    digitalWrite(LED_BUILTIN, LOW);      // turn the LED off by making the voltage LOW
-    delay(1000);                        // wait for a second
     digitalWrite(LED_BUILTIN, HIGH);    // turn the LED on (HIGH is the voltage level)
     delay(3000);                       // wait for a three second
+    digitalWrite(LED_BUILTIN, LOW);      // turn the LED off by making the voltage LOW
+    delay(1000);                        // wait for a second
 }
 
 void loop() 
@@ -35,37 +35,31 @@ void loop()
   Dash();
   Dash();
   Dot();
-  digitalWrite(LED_BUILTIN, LOW);
-  delay(1000);                                 //We will leave it for 1 sec
+  delay(500);                                 //We will leave it for 0.5 sec
   
 //A                                             //Displaying Letter A
   Dot();
   Dash();
-  digitalWrite(LED_BUILTIN, LOW);
-  delay(1000);                                  //We will leave it for 1 sec
+  delay(500);                                  //We will leave it for 0.5 sec
   
 //R                                             //Displaying Letter R
   Dot();
   Dash();
-  Dot();
-  digitalWrite(LED_BUILTIN, LOW);               
-  delay(1000);                                  //We will leave it for 1 sec
+  Dot();             
+  delay(500);                                  //We will leave it for 0.5 sec
   
 //I                                             //Displaying Letter I
   Dot();
   Dot();
-  digitalWrite(LED_BUILTIN, LOW);
-  delay(1000);                                  //We will leave it for 1 sec
+  delay(500);                                  //We will leave it for 0.5 sec
   
 //M                                             //Displaying Letter M
   Dash();
   Dash(); 
-  digitalWrite(LED_BUILTIN, LOW);
-  delay(1000);                                  //We will leave it for 1 sec
+  delay(500);                                  //We will leave it for 0.5 sec
   
 //A                                             //Displaying Letter A
   Dot();
   Dash(); 
-  digitalWrite(LED_BUILTIN, LOW);
-  delay(1000);                                  //We will leave it for 1 sec
+  delay(500);                                  //We will leave it for 0.5 sec
 }   
